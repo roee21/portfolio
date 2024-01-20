@@ -15,19 +15,19 @@ $("a")
     $(".cursor-inner").removeClass("is--link");
   });
 
-//Show cursor position
-const box = document.querySelector("body");
-const pageX = document.getElementById("cursor-x");
-const pageY = document.getElementById("cursor-y");
+// //Show cursor position
+// const box = document.querySelector("body");
+// const pageX = document.getElementById("cursor-x");
+// const pageY = document.getElementById("cursor-y");
 
-function updateDisplay(event) {
-  pageX.innerText = event.pageX;
-  pageY.innerText = event.pageY;
-}
+// function updateDisplay(event) {
+//   pageX.innerText = event.pageX;
+//   pageY.innerText = event.pageY;
+// }
 
-box.addEventListener("mousemove", updateDisplay, false);
-box.addEventListener("mouseenter", updateDisplay, false);
-box.addEventListener("mouseleave", updateDisplay, false);
+// box.addEventListener("mousemove", updateDisplay, false);
+// box.addEventListener("mouseenter", updateDisplay, false);
+// box.addEventListener("mouseleave", updateDisplay, false);
 
 //darkmode
 
