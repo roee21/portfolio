@@ -1,0 +1,56 @@
+textarea {
+  /* all: unset; */
+  line-height: 22px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.gpt-input {
+  resize: none;
+}
+
+.caret-wrap {
+  display: block;
+  pointer-events: none;
+}
+
+textarea::placeholder {
+  color: transparent;
+  opacity: 0; /* Firefox */
+}
+
+textarea:focus + .caret-wrap {
+  display: none;
+}
+
+textarea:not(:placeholder-shown) + .caret-wrap {
+  display: none;
+}
+.caret-placeholder {
+  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
